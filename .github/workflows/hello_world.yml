@@ -39,7 +39,7 @@ jobs:
   hello-world-windows:
     name: Hello World Windows
     needs: [ hello-world-ubuntu ]
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     
     steps: 
       - name: Print Hello World Windows
