@@ -60,3 +60,12 @@ jobs:
     steps: 
       - name: Print Hello World
         run: echo 'Hello World rodando no MacOS'
+        
+  hello-world-ubuntu-3:
+    name: Hello World Ubuntu 3
+    needs: [ hello-world-ubuntu-2, hello-world-windows ]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run a one-line script
+        run: echo Hello, world!
