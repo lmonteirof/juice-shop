@@ -37,7 +37,7 @@ jobs:
           
   hello-world-ubuntu-2:
     name: Hello World Ubuntu 2
-    needs: [ hello-world-ubuntu-1, hello-world-macos, hello-world-windows]
+    needs: [ hello-world-ubuntu-1, hello-world-macos ]
     runs-on: ubuntu-latest
 
     steps:
@@ -60,6 +60,3 @@ jobs:
     steps: 
       - name: Print Hello World
         run: echo 'Hello World rodando no MacOS'
-
-
-    
