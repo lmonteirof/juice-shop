@@ -32,7 +32,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          sudo apt-get -y install httpd
           sudo apt-get -y install ssh-server
           sudo apt-get -y install mariadb
           
