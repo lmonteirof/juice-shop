@@ -32,8 +32,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          sudo apt-get -y install ssh-server
-          sudo apt-get -y install mariadb
+          Echo 'nada para mostrar',
+          Echo 'aqui nesta instancia!'
           
   hello-world-ubuntu-2:
     name: Hello World Ubuntu 2
